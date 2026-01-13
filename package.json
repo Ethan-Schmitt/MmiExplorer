@@ -1,0 +1,30 @@
+{
+  "name": "nuxt-app",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "typegen": "npx pocketbase-typegen --db ./pocketbase/pb_data/data.db --out ./pocketbase-types.ts"
+  },
+  "dependencies": {
+    "@motionone/vue": "^10.16.4",
+    "@vueuse/motion": "^3.0.3",
+    "axios": "^1.13.2",
+    "csv-parser": "^3.2.0",
+    "d3": "^7.9.0",
+    "dotenv": "^17.2.3",
+    "lucide-vue-next": "^0.562.0",
+    "motion": "^12.25.0",
+    "nuxt": "^4.1.2",
+    "pocketbase": "^0.26.2",
+    "vue": "^3.5.21",
+    "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.14.0"
+  }
+}

@@ -1,0 +1,124 @@
+﻿code,name,nb_heures_PPN,nb_heures_semaine,Type
+R101,Anglais,25,25,Ressource
+R102,Anglais / anglais renforcé,10,10,Ressource
+R103,Ergonomie & Accessibilité,15,15,Ressource
+R104,Culture numérique,15,15,Ressource
+R105,Stratégies de communication et marketing,25,25,Ressource
+R106,"Expression, communication et rhétorique",20,20,Ressource
+R107,Écriture multimédia et narration,15,15,Ressource
+R108,Production graphique,20,20,Ressource
+R109,Culture artistique,15,15,Ressource
+R110,Production audio & vidéo,20,20,Ressource
+R111,Intégration,25,25,Ressource
+R112,Développement web,20,20,Ressource
+R113,Hébergement,15,15,Ressource
+R114,Représentation et traitement de l'information,20,20,Ressource
+R115,Gestion de projet,15,15,Ressource
+R116,Economie et Droit du numérique,15,15,Ressource
+R117,PPP,20,20,Ressource
+SAE101,Auditer une communication numérique,25,25,SAE
+SAE102,Concevoir une recommandation de communication numérique,20,20,SAE
+SAE103,Produire les éléments d'une communication visuelle,22.5,22.5,SAE
+SAE104,Réaliser une production audio et vidéo,22.5,22.5,SAE
+SAE105,Produire un site Web,55,55,SAE
+SAE106,Gérer un projet de communication numérique,45,45,SAE
+R201,Anglais,15,15,Ressource
+R202,Anglais,10,10,Ressource
+R203,Ergonomie & Accessibilité,15,15,Ressource
+R204,Culture numérique,15,15,Ressource
+R205,Stratégie de communication & marketing,15,15,Ressource
+R206,"Expression, communication et réthorique",15,15,Ressource
+R207,Ecriture multimédia et narration,15,15,Ressource
+R208,Production graphique,20,20,Ressource
+R209,Culture artistique,15,15,Ressource
+R210,Production audio et vidéo,20,20,Ressource
+R211,Gestion de contenu,10,10,Ressource
+R212,Intégration,20,20,Ressource
+R213,Développement web,20,20,Ressource
+R214,Système d'information,15,15,Ressource
+R215,Hébergement,15,15,Ressource
+R216,Représentation et traitement de l'information,15,15,Ressource
+R217,Gestion de projet,15,15,Ressource
+R218,Economie et Droit du numérique,15,15,Ressource
+R219,PPP,20,20,Ressource
+SAE201,Exploration des usages,20,20,SAE
+SAE202,Conception d'un produit ou d'un service et sa communication,105,105,SAE
+SAE203,Concevoir un site web avec une source de données,50,50,SAE
+SAE204,Construire sa présence en ligne,20,20,SAE
+S2 Portfolio,Portfolio,0,0,SAE
+R301,Anglais,25,25,Ressource
+R302,Anglais / anglais renforcé,25,25,Ressource
+R303,Design d’expérience,15,15,Ressource
+R304,Culture numérique,15,15,Ressource
+R305,Stratégie de communication et marketing,15,15,Ressource
+R306,Référencement,15,15,Ressource
+R307,"Expression, communication et réthorique",15,15,Ressource
+R308,Écriture multimédia et narration,10,10,Ressource
+R309,Création et design interactif (UI),15,15,Ressource
+R310,Culture artistique,20,20,Ressource
+R311,Audiovisuel et motion design,20,20,Ressource
+R312,Développement Front et intégration,35,35,Ressource
+R313,Dev back (dev) / Gestion de contenus (non dev),20,20,Ressource
+R314,Déploiement de services,20,20,Ressource
+R315,Représentation et traitement de l’information,20,20,Ressource
+R316,Gestion de projet,15,15,Ressource
+R317,"Economie, gestion et droit du numérique",15,15,Ressource
+R318,PPP,10,10,Ressource
+SAE301,Intégrer des interfaces utilisateurs au sein d'un système d'information,25,25,SAE
+SAE302,Produire des contenus pour une communication plurimédia,25,25,SAE
+SAE303,Concevoir des visualisations de données pour le web et un support animé,20,20,SAE
+R401,Anglais,15,15,Ressource
+R402,"Économie, gestion et droit du numérique",15,15,Ressource
+R403,Design d'expérience,15,15,Ressource
+R404,"Expression, communication",15,15,Ressource
+R405 Crea,Gestion de contenus spécialisée,20,20,Ressource
+R406 Crea,Culture artistique,15,15,Ressource
+R407 Crea,Audiovisuel   Motion design,15,15,Ressource
+R408 Crea,Ecriture multimédia et narration,10,10,Ressource
+R405 Dev,Création et design interactif,15,15,Ressource
+R406 Dev,Développement front,15,15,Ressource
+R407 Dev,Développement back,20,20,Ressource
+R408 Dev,Déploiement de services,10,10,Ressource
+R405 Strat UX,Stratégie de Com / Webmarketing,20,20,Ressource
+R406 Strat UX,Storytelling (communication narrative),20,20,Ressource
+R407 Strat UX,Gestion de contenus spécialisée,20,20,Ressource
+SAE401 Crea,Créer pour une campagne de communication visuelle,40,40,SAE
+SAE401 Dev,Développer pour le Web,60,60,SAE
+SAE401 Strat UX,Mettre en place une solution ecommerce et la stratégie associée,50,50,SAE
+SAE402 Crea,Produire du contenu multimédia,45,45,SAE
+SAE402 Dev,Concevoir un dispositif interactif,25,25,SAE
+SAE402 Strat Ux,Développer une communication sur les médias sociaux,35,35,SAE
+S4 Portfolio Créa,Portfolio Parcours Création Numérique,0,0,SAE
+S4 Portfolio Dev,Portfolio Parcours Développement Web et Dispositifs interactifs,0,0,SAE
+S4 Portfolio Strat UX,Portfolio Parcours Stratégie de communication et design d'expérience,0,0,SAE
+S4 Stage Créa,Stage Parcours Création Numérique,0,0,Stage
+S4 Stage Strat UX,Stage Parcours Stratégie de communication et design d'expérience,0,0,Stage
+S4 Stage Dev,Stage Parcours Développement Web et Dispositifs interactifs,0,0,Stage
+R501,Anglais,20,20,Ressource
+R502,Management et Assurance qualité,15,15,Ressource
+R503,Entrepreneuriat,15,15,Ressource
+R504,Projet Personnel et Professionnel,20,20,Ressource
+R505 Créa,Définir une direction artistique,40,40,Ressource
+R506 Créa,Création numérique,75,75,Ressource
+R507 Créa,Ecriture Multimédia et narration,75,75,Ressource
+R505 Dev,Développement front avancé,50,50,Ressource
+R506 Dev,Développement back avancé,50,50,Ressource
+R507 Dev,Dispositifs interactifs,50,50,Ressource
+R508 Dev,Hébergement et cybersécurité,40,40,Ressource
+R505 Strat UX,Stratégie de communication,60,60,Ressource
+R506 Strat UX,Webmarketing,65,65,Ressource
+R507 Strat UX,Design d'expérience,65,65,Ressource
+SAE501 Créa,Créer par/pour le numérique,0,0,SAE
+SAE501 Dev,Développer pour le web ou Concevoir un dispositif interactif,0,0,SAE
+SAE501 Strat UX,Concevoir et déployer une stratégie de communication et une expérience utilisateur,0,0,SAE
+R601,Entrepreneuriat,15,15,Ressource
+R602 Créa,Création numérique interactive,38,38,Ressource
+R602 Dev,Développement Web et dispositif interactif,38,38,Ressource
+R602 Strat UX,Design d'expérience,18,18,Ressource
+R603 Strat UX,Stratégie de communication pluri média,20,20,Ressource
+S6 Portfolio Créa,Portfolio Parcours Création Numérique,0,0,SAE
+S6 Portfolio Dev,Portfolio Parcours Développement Web et Dispositifs interactifs,0,0,SAE
+S6 Portfolio Strat UX,Portfolio Parcours Stratégie de communication et design d'expérience,0,0,SAE
+S6 Stage Créa,Stage Parcours Création Numérique,0,0,Stage
+S6 Stage Dev,Stage Parcours Développement Web et Dispositifs interactifs,0,0,Stage
+S6 Stage Strat UX,Stage Parcours Stratégie de communication et design d'expérience,0,0,Stage
