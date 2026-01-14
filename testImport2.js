@@ -1,6 +1,6 @@
 import PocketBase from "pocketbase";
 
-const pb = new PocketBase("http://127.0.0.1:8090");
+const pb = new PocketBase("https://yubi.alwaysdata.net/");
 
 // Données extraites de Ressource_orga.csv (123 enregistrements)
 const dataList = [

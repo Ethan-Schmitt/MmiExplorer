@@ -3,7 +3,7 @@ import { ref, onMounted } from "vue";
 import { useRoute } from "vue-router";
 import PocketBase, { type RecordModel } from "pocketbase";
 
-const pb = new PocketBase("http://127.0.0.1:8090");
+const pb = new PocketBase("https://yubi.alwaysdata.net/");
 const route = useRoute();
 
 const item = ref<RecordModel | null>(null);

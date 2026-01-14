@@ -4,7 +4,7 @@ import { useRoute } from 'vue-router';
 import PocketBase, { type RecordModel } from 'pocketbase';
 
 // Initialisation de PocketBase
-const pb = new PocketBase("http://127.0.0.1:8090");
+const pb = new PocketBase("https://yubi.alwaysdata.net/");
 const route = useRoute();
 
 // Variables réactives

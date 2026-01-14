@@ -2,7 +2,7 @@
 import { ref, onMounted, computed } from "vue";
 import PocketBase, { type RecordModel } from "pocketbase";
 
-const pb = new PocketBase("http://127.0.0.1:8090");
+const pb = new PocketBase("https://yubi.alwaysdata.net/");
 
 const enseignements = ref<RecordModel[]>([]);
 const apprentissages = ref<RecordModel[]>([]);
