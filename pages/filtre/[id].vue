@@ -10,7 +10,7 @@ const item = ref<ExpandedItem | null>(null);
 const colName = (route.query.col as string) || "Enseignements";
 
 interface ExpandedItem extends RecordModel {
-  fiche?: string; // Champ ajouté pour correspondre à ta base de données
+  fiche?: string;
   expand?: {
     competences?: RecordModel[];
     AC?: RecordModel[];
@@ -18,6 +18,18 @@ interface ExpandedItem extends RecordModel {
     semestre?: RecordModel;
   };
 }
+
+// Fonction pour extraire le chiffre du nom du semestre (ex: "Semestre 1" -> "1")
+const getSemestreLink = (semestre: RecordModel) => {
+  if (!semestre) return "#";
+  // Si tu as un champ 'number' ou 'id_semestre', on l'utilise
+  if (semestre.number) return `/semestre/${semestre.number}`;
+  if (semestre.id_semestre) return `/semestre/${semestre.id_semestre}`;
+  
+  // Sinon, on extrait le chiffre du nom "Semestre X"
+  const match = semestre.name ? semestre.name.match(/\d+/) : null;
+  return match ? `/semestre/${match[0]}` : `/semestre/${semestre.id}`;
+};
 
 onMounted(async () => {
   const id = route.params.id as string;
@@ -52,9 +64,13 @@ onMounted(async () => {
       <div class="header-meta">
         <span class="label">{{ item.type || "Apprentissage Critique" }}</span>
 
-        <span v-if="item.expand?.semestre" class="semester-badge">
+        <NuxtLink 
+          v-if="item.expand?.semestre" 
+          :to="getSemestreLink(item.expand.semestre)"
+          class="semester-badge"
+        >
           {{ item.expand.semestre.name }}
-        </span>
+        </NuxtLink>
       </div>
 
       <h1>{{ item.code ? item.code + " :" : "" }} {{ item.name }}</h1>
@@ -78,10 +94,15 @@ onMounted(async () => {
             <p>Niv. {{ item.niveau }}</p>
           </div>
 
-          <div v-if="item.expand?.semestre" class="stat-card semester-card">
+          <NuxtLink 
+            v-if="item.expand?.semestre" 
+            :to="getSemestreLink(item.expand.semestre)"
+            class="stat-card semester-card"
+            style="text-decoration: none;"
+          >
             <label>Période</label>
             <p>{{ item.expand.semestre.name }}</p>
-          </div>
+          </NuxtLink>
         </div>
       </div>
 
@@ -96,10 +117,15 @@ onMounted(async () => {
             <p>{{ item.nb_heures_semaine }}h</p>
           </div>
 
-          <div v-if="item.expand?.semestre" class="stat-card semester-card">
+          <NuxtLink 
+            v-if="item.expand?.semestre" 
+            :to="getSemestreLink(item.expand.semestre)"
+            class="stat-card semester-card"
+            style="text-decoration: none;"
+          >
             <label>Semestre</label>
             <p>{{ item.expand.semestre.name }}</p>
-          </div>
+          </NuxtLink>
         </div>
 
         <div class="relations-grid">
@@ -109,7 +135,7 @@ onMounted(async () => {
               <NuxtLink
                 v-for="c in ([] as RecordModel[]).concat(item.expand?.competences || [])"
                 :key="c.id"
-                :to="`/competence/${c.id}`"
+                :to="`/competence/${c.code || c.id}`"
                 class="competence-badge hoverable-badge"
               >
                 {{ c.name }} <span>→</span>
@@ -220,6 +246,7 @@ onMounted(async () => {
   color: #1e293b;
   text-transform: uppercase;
   border: 1px solid rgba(255, 255, 255, 0.3);
+  text-decoration: none;
 }
 
 .semester-card {
